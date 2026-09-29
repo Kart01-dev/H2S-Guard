@@ -1,0 +1,38 @@
+{
+  "expo": {
+    "name": "H2S Guard",
+    "slug": "h2s-guard",
+    "version": "1.0.0",
+    "orientation": "portrait",
+    "icon": "./public/favicon.ico",
+    "scheme": "h2sguard",
+    "userInterfaceStyle": "light",
+    "assetBundlePatterns": [
+      "**/*"
+    ],
+    "ios": {
+      "supportsTablet": true,
+      "bundleIdentifier": "com.h2sguard.app"
+    },
+    "android": {
+      "package": "com.h2sguard.app",
+      "permissions": [
+        "CAMERA",
+        "READ_EXTERNAL_STORAGE",
+        "WRITE_EXTERNAL_STORAGE"
+      ]
+    },
+    "web": {
+      "bundler": "metro"
+    },
+    "plugins": [
+      "expo-router",
+      [
+        "expo-camera",
+        {
+          "cameraPermission": "Allow H2S Guard to access camera for optical wristband scanning and QR verification."
+        }
+      ]
+    ]
+  }
+}
